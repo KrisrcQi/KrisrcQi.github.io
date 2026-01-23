@@ -39,9 +39,10 @@ body{
 @media (min-width: 778px)
 {
 		.main{
-			height: 100vh;
-			overflow: hidden;
-		}
+    	min-height: 100vh;     /* keep the “full page” look */
+    	height: auto;          /* allow it to grow with content */
+    	overflow: visible;     /* do not hide overflow */
+  		}
 
 		.img-rabbit{
 			/*margin: 0 -15px;*/
@@ -313,3 +314,5 @@ footer{
 .show{
 	display: block;
 }
+
+
