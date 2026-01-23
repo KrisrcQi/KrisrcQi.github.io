@@ -56,7 +56,7 @@ body{
 			font-family: "Crimson";
 			line-height: 28px;
 		    font-size: 16px;
-		    padding-top: 15px;
+		    padding-top: 10px;
 		    padding-right: 50px;
 		}
 		
@@ -214,8 +214,8 @@ footer{
 	color: #3b3b3b;
 	line-height: 28px;
 	font-family: "Crimson";
-	margin-top: 15px;
-	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 15px;
 	padding-right: 40px;
 
 	}
