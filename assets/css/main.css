@@ -1,6 +1,7 @@
 body{
 	background-color: #f9f9f9;
 	font-family: "Crimson Text";
+	padding-bottom: 80px; /* space for fixed footer */
 }
 
 .main{
