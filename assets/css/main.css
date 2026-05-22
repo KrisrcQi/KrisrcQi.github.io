@@ -4,8 +4,12 @@ body{
 	padding-bottom: 80px; /* space for fixed footer */
 }
 
-.main{
-	background: #fff;
+.main {
+    background: #fff;
+    min-height: 100vh;
+    height: auto;
+    overflow: visible;
+    padding-bottom: 120px;
 }
 
 .home-description{
@@ -39,12 +43,6 @@ body{
 
 @media (min-width: 778px)
 {
-		.main{
-    	min-height: 100vh;     /* keep the “full page” look */
-    	height: auto;          /* allow it to grow with content */
-    	overflow: visible;     /* do not hide overflow */
-  		}
-
 		.img-rabbit{
 			/*margin: 0 -15px;*/
 		}
