@@ -40,6 +40,16 @@ body{
 	background-color: #bb9e7d;
 	}
 
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #fff;
+    font-style: italic;
+    z-index: 999;
+}
 
 @media (min-width: 778px)
 {
@@ -96,6 +106,21 @@ p{
 	font-family: 'Josefin Sans';
 }
 
+/* Reusable full-page vertical centering */
+.section-center {
+    min-height: calc(100vh - 70px); /* full screen minus footer space */
+    display: flex;
+    align-items: center;            /* vertical center */
+    justify-content: center;        /* horizontal center */
+    padding-top: 40px;
+    padding-bottom: 130px;          /* prevents fixed footer covering content */
+}
+
+/* Bootstrap 3 column float fix */
+.section-center > [class*="col-"] {
+    float: none;
+}
+
 /*Home Style*/
 /* Home vertical centering */
 #index,
@@ -125,16 +150,7 @@ p{
 	font-family: 'Josefin Sans';
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 12px 0;
-    background-color: #fff;
-    font-style: italic;
-    z-index: 999;
-}
+
 
 .back{
     width: 170px;    
@@ -297,8 +313,6 @@ footer {
 	padding-left: 1px;
 }
 
-
-
 .owl-theme .owl-controls .owl-nav [class*=owl-]{
 	position: absolute;
 	border-radius: 0px;
@@ -357,6 +371,19 @@ footer {
         padding-left: 25px;
         padding-right: 25px;
     }
+
+	.section-center {
+        min-height: auto;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 130px;
+    }
+
+    .section-center > [class*="col-"] {
+        width: 100%;
+        float: none;
+    }
 }
+
 
 
