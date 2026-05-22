@@ -98,8 +98,26 @@ p{
 }
 
 /*Home Style*/
+/* Home vertical centering */
+#index,
+#index .main,
+#index .home {
+    min-height: 100vh;
+}
+
+#index .home {
+    display: flex;
+    align-items: center;       /* vertical center */
+    justify-content: center;   /* horizontal center */
+}
+
+#index_left,
+#index_right {
+    float: none;               /* overrides Bootstrap column float */
+}
+
 .logo{
-	padding-top: 100px;
+	padding-top: 0;
 	text-transform: uppercase;
 	font-size: 12px;
 }
@@ -202,7 +220,6 @@ footer{
 }
 
 .submit{
-
 	font-family: "Crimson"
 	font-size: 16px;
 }
@@ -313,6 +330,30 @@ footer{
 }
 .show{
 	display: block;
+}
+
+/*mobile handling*/
+@media (max-width: 777px) {
+    #index .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #index_left,
+    #index_right {
+        width: 100%;
+        float: none;
+    }
+
+    .home-description {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 
